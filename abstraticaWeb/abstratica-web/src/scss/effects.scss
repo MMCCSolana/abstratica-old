@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.bn5::before {
+  padding: 0.6em 2em;
+  border: none !important;
+  outline: none !important;
+  border-radius: 100px;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  background-size: 200%;
+  z-index: 1;
+  filter: blur(6px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 1 !important;
+  content: "";
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  // transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.bn5:hover::after {
+  background: #6d6d6d;
+}
+.bn5 .bn5-icon {
+  color: rgb(228, 228, 228);
+}
+.bn5:hover .bn5-icon {
+  color: white;
+}
+.bn5::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: $abs-dark-bg;
+  filter: blur(1px);
+  border-radius: 100px;
+  border: none !important;
+  outline: none !important;
+}

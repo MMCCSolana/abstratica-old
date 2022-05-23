@@ -1,0 +1,59 @@
+@import "./variables.scss";
+
+.no-border {
+  border: none;
+}
+.no-border-radius {
+  border-radius: 0;
+}
+.solana-text-color {
+  background: $solana-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-name {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+.page-message {
+  font-family: $font-eyecandy;
+  text-align: center;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px 0 0 0;
+  margin: 30px 0;
+  line-height: 40px;
+}
+.fill-height {
+  height: 100% !important;
+}
+.fill-width {
+  width: 100% !important;
+}
+.absolute {
+  position: absolute;
+}
+.no-text-decor {
+  text-decoration: none;
+}
+.inherit-color {
+  color: inherit;
+}
+.font-eyecandy {
+  font-family: $font-eyecandy !important;
+}
+.no-text-transform {
+  text-transform: none !important;
+}
+.mouse-pointer {
+  cursor: pointer;
+}
+.z-1000 {
+  z-index: 1000;
+}
+.no-bg-hover::before {
+  background-color: transparent !important;
+}
